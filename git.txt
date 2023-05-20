@@ -1,10 +1,26 @@
 コードなど変更や新規作成する前に
-mainに移動して、branch作成する
+1- branch確認
+###
+git branch
+###
+
+2- mainに移動して、branch作成する
 ###
 git checkout -b 新規ブランチ名
 ###
 
-変更をpushして、PR作成します。
+3- git add . (+ ボタン)して、コメントする (commint ボタン)
+
+4-変更をpushして、PR作成します。
+git push origin 作成したブランチ名
+
+5- approveしたら、マージ
+
+6- main戻って、git pull origin main する
 
 
-approveしたら、マージ
+
+Commands
+git checkout ブランチ名　（移動のために）
+git checkout -b　ブランチ名　（新規作成）
+
