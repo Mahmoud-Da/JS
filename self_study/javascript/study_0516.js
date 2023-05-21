@@ -11,7 +11,6 @@ const name = "Maly";
 console.log(name === "Maly");
 console.log(name !== "Maly");
 
-
 const baby = "katy";
 const text = "she is";
 let age = 18;
@@ -20,5 +19,5 @@ age /= 3;
 
 console.log(`${text} ${baby}`);
 if (age > 18) {
-    console.log(`${text} not  ${baby}`);
+  console.log(`${text} not  ${baby}`);
 }
