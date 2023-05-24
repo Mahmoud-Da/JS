@@ -22,9 +22,8 @@ const characters = [
 ];
 for (let i = 0; i < characters.length; i++) {
   console.log("--------------------");
-  const character = characters[i];
-  console.log(`名前は${character.name}です`);
-  console.log(`${character.age}歳です`);
+  console.log(`名前は${characters[i].name}です`);
+  console.log(`${characters[i].age}歳です`);
 }
 
 const friends = [
@@ -34,7 +33,6 @@ const friends = [
 ];
 for (let i = 0; i < friends.length; i++) {
   console.log("~~~~~~~~~~~~~~~");
-  const friend = friends[i];
-  console.log(`She is${friend.name}です`);
-  console.log(`${friend.age}歳です`);
+  console.log(`She is${friends[i].name}です`);
+  console.log(`${friends[i].age}歳です`);
 }
