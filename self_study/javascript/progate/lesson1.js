@@ -36,6 +36,7 @@ console.log("name");
 let name1 = "John";
 console.log(name1 + "Lili");
 let number1 = 10;
+
 console.log(number1 + 5);
 //一度値を代入した変数に、その後再び値を代入すると、後に代入した値で変数の中身が上書きされます。
 let staff = "Mai";
@@ -112,3 +113,5 @@ switch (color) {
   default:
     console.log("Go");
 }
+
+console.log(number + 5);
