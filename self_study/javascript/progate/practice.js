@@ -1,3 +1,4 @@
+// lesson1
 // 変数：let ... ="...";
 
 // 定義：const ... ="...";
@@ -30,4 +31,61 @@ if (age >= 20) {
   console.log("Ken さんは未成年です。");
 } else {
   console.log("Ken さんはコンビニでタバコが買えません。");
+}
+
+// lesson2
+let number = 1;
+while (number <= 100) {
+  console.log(number);
+  number += 1;
+}
+
+//for文：　（white文が同じ）while文に比べてシンプルに書くことができるのが特徴です。
+for (let number1 = 1; number1 <= 100; number1++) {
+  console.log(number);
+  // if文を用いて、numberが3の倍数の時に「3の倍数です」
+  if (number % 3 === 0) {
+    console.log("3の倍数です");
+  } else {
+    console.log(number);
+  }
+}
+
+//配列を定数に代入する
+const fruits = ["apple", "banana", "orange"]; //インデックス番号 ["apple", "banana", "orange"] => [0, 1, 2]
+console.log(fruits); //全部が出力される。
+console.log(fruits[0]); //apple しか出力されない。
+fruits[0] = "grape"; //配列の要素を更新する
+const value = [21, 43, 12];
+console.log(value); //全部が出力される
+//配列とfor文
+for (let i = 0; i < 3; i++) {
+  console.log(fruits[i]);
+}
+for (let i = 1; i < 3; i++) {
+  console.log(fruits[i]);
+}
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+for (let i = 1; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+//配列と繰り返し処理
+const characters = [
+  { name1: "John", age: 18 },
+  { name1: "Katy", age: 20 },
+  { name1: "Hannal", age: 32 },
+];
+for (let i = 0; i < characters.length; i++) {
+  console.log("--------------------");
+  const character = characters[i];
+  console.log(`Hi, I'm${character.name1}, ${character.age}years old`);
+  if (character.age === undefined) {
+    console.log("年齢は秘密です");
+  } else {
+    console.log(`${character.age}歳です`);
+  }
 }
