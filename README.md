@@ -1,2 +1,2 @@
 # JS
-refresh js
+Organize the Essentials of JavaScript
